@@ -2,6 +2,8 @@
 
 window.addEventListener("load", function() {
 
+    let form = document.querySelector('form');
+    
    let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
    let listedPlanetsResponse;
