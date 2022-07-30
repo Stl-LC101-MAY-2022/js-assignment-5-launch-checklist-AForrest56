@@ -39,10 +39,21 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     let copilotStatus = document.getElementById('copilotStatus');
     let fuelStatus = document.getElementById('fuelStatus');
     let cargoStatus = document.getElementById('cargoStatus');
+    
 
     document.getElementById('pilotStatus').innerHTML = `Pilot ${pilot} is ready for launch. `;
     document.getElementById('copilotStatus').innerHTML = `Copilot ${copilot} is ready for launch.`
 
+    let list = document.getElementById('faultyItems');
+    
+
+    if ( fuelLevel < 10000){
+        list.style.visability = 'visable';
+        document.getElementById('fuelStatus').innerHTML = "Not enough fuel for the journey.";
+        document.getElementById('launchStatus').innerHTML = "Shuttle not ready for launch";
+        document.getElementById('launchStatus').style.color = "red"
+    }
+    
     }
 }
 
