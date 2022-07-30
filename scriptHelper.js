@@ -30,11 +30,11 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 
     if (validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" || validateInput(fuelLevel) === "Empty" || validateInput(cargoLevel) === "Empty"){
         alert("All fields are required!")
-    } else if (validateInput(pilot) === "Is a number" || validateInput(copilot) === "Is a number"){
+    } else if (validateInput(pilot) === "Is a number" || validateInput(copilot) === "Is a number" || validateInput(fuelLevel) === "Not a number" || validateInput(cargoLevel) === "Not a number"){
         alert("Make sure to enter valid information for each field!")
     }
 
-    
+
 }
 
 async function myFetch() {
