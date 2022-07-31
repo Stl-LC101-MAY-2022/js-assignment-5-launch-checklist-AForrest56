@@ -1,10 +1,10 @@
 // Write your JavaScript code here!
 
-const { addDestinationInfo, formSubmission } = require("./scriptHelper");
+//const { addDestinationInfo, formSubmission } = require("./scriptHelper");
 
 window.addEventListener("load", function() {
 
-    let form = document.querySelector('testForm');
+let form = document.querySelector('form');
     
    let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
