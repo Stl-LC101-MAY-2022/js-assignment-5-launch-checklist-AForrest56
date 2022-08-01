@@ -24,16 +24,9 @@ let form = document.querySelector('form');
 
     let pilot = document.getElementById('pilotName').value;
     let copilot = document.querySelector('input[name = copilotName]').value;
-    let fuelLevel = document.querySelector('input[name = fuelLevel]').value;
-    let cargoLevel = document.querySelector('input[name = cargoMass]').value;
+    let fuelLevel = Number(document.querySelector('input[name = fuelLevel]').value);
+    let cargoLevel = Number(document.querySelector('input[name = cargoMass]').value);
     let list = document.getElementById("faultyItems");
-
-    if (isNaN(fuelLevel) === true){
-        fuelLevel = Number(fuelLevel)
-    }
-    if (isNaN(cargoLevel) === true){
-        cargoLevel = Number(cargoLevel)
-    }
 
     formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
    })
