@@ -28,6 +28,13 @@ let form = document.querySelector('form');
     let cargoLevel = document.querySelector('input[name = cargoMass]').value;
     let list = document.getElementById("faultyItems");
 
+    if (isNaN(fuelLevel) === true){
+        fuelLevel = Number(fuelLevel)
+    }
+    if (isNaN(cargoLevel) === true){
+        cargoLevel = Number(cargoLevel)
+    }
+
     formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
    })
 });
