@@ -23,9 +23,9 @@ let form = document.querySelector('form');
     event.preventDefault();
 
     let pilot = document.getElementById('pilotName').value;
-    let copilot = document.getElementById('copilotName').value;
-    let fuelLevel = document.getElementById('fuelLevel').value;
-    let cargoLevel = document.getElementById('cargoMass').value;
+    let copilot = document.querySelector('input[name = copilotName]').value;
+    let fuelLevel = document.querySelector('input[name = fuelLevel]').value;
+    let cargoLevel = document.querySelector('input[name = cargoMass]').value;
     let list = document.getElementById("faultyItems");
 
     formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
