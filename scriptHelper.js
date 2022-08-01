@@ -57,14 +57,14 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 
     if (cargoLevel > 10000) {
 
-        document.getElementById('cargoStatus').innerHTML = "Shuttle too heavy for take off.";
-        document.getElementById('launchStatus').innerHTML = "Shuttle not ready for launch";
-        document.getElementById('launchStatus').style.color = "red";
+        cargoStatus.innerHTML = "Shuttle too heavy for take off.";
+        launchStatus.innerHTML = "Shuttle not ready for launch";
+        launchStatus.style.color = "red";
     }
 
     if (fuelLevel > 10000 && cargoLevel < 10000) {
-        document.getElementById('launchStatus').innerHTML = "Shuttle is ready for launch";
-        document.getElementById('launchStatus').style.color = "green";
+        launchStatus.innerHTML = "Shuttle is ready for launch";
+        launchStatus.style.color = "green";
     }
     
     }
